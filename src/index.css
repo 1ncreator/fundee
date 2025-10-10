@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-block: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+}
+
+body {
+  font-family: 'Lato', 'sans-serif';
+}
+
+.container {
+  width: 1170px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+

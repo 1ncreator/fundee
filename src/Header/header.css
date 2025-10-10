@@ -1,0 +1,50 @@
+.header-wrapper {
+    display: flex;
+}
+  
+.header-logo {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    width: 96px;  
+    padding-top: 37px;
+    color: black;
+}
+  
+.header-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 47px 0px 0px 104px;
+    column-gap: 52px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #212130;
+}
+
+.login-btns {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 40px 0px 0px 458px;
+    column-gap: 20px;
+}
+  
+.login-btn {
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #6B68F3;
+    color: #212130;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.signup-btn {
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: #6B68F3;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+}
