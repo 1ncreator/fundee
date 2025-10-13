@@ -1,5 +1,6 @@
 import "./how-it-works.css"
-import "../index.css"
+import Button from "../Button"
+
 
 export default function HowWorks() {
 
@@ -54,7 +55,7 @@ export default function HowWorks() {
                 </div>
             </div>
                 <div className="hiw-btn">
-                    <button>Call to action</button>
+                    <Button btntext={'Call to action'} variant="purple-button" />
                 </div>
         </div>
     )

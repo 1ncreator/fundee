@@ -1,10 +1,11 @@
 import React from "react"
+import './button.css'
 
-const Button = ({ text, onClick, variant }) => (
+const Button = ({ btntext, onClick, variant }) => (
   <button
-    className={`button ${variant === "blue" ? "blue" : "white-button"}`}
+    className={`button ${variant === "purple-button" ? "purple-button" : "white-button"}`}
     onClick={onClick}>
-    <p>{text}</p>
+    <p>{btntext}</p>
   </button>
 )
 

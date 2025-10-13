@@ -1,7 +1,8 @@
 import './trending.css'
-import '../Carousel/carousel.css'
+import Button from '../Button/index.jsx';
+
 import React from "react";
-import EmblaCarousel from '../Carousel/Carousel';
+import EmblaCarousel from '../Carousel/Carousel.jsx';
 
 export default function TrendingProjects() {
     return(
@@ -13,7 +14,7 @@ export default function TrendingProjects() {
                 <EmblaCarousel />
             </div>
             <div className='button'>
-                <button>Explore projects</button>
+                <Button btntext={'Explore projects'} variant='white-button'/>
             </div>
         </div>
     )

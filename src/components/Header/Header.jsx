@@ -1,4 +1,5 @@
 import './header.css'
+import Button from '../Button'
 
 
 export default function Header() {
@@ -13,8 +14,8 @@ export default function Header() {
                 <p>About us</p>
             </div>
             <div className="login-btns">
-                <button className='login-btn'>Log in</button>
-                <button className='signup-btn'>Sign up</button>
+                <Button btntext={'Log in'} variant='white-button' />
+                <Button btntext={'Sign up'} variant='purple-button' />
             </div>
         </header>
     )

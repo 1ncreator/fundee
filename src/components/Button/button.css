@@ -1,0 +1,22 @@
+.purple-button {
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: #6B68F3;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.white-button { 
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #6B68F3;
+    color: #212130;
+    font-size: 15px;
+    font-weight: 700;
+} 
+
+

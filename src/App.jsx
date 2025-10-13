@@ -1,28 +1,19 @@
-import Header from "./Header/Header.jsx"
-import HeroSection from "./Hero-section/Hero.jsx"
-import HowWorks from "./How-it-works-section/How-it-works.jsx"
-import TrendingProjects from "./Trending Projects/Trending.jsx"
-import Footer from "./Footer/footer.jsx"
-
-import Button from "./components/Button/index.jsx"
+import Header from "./components/Header/Header.jsx"
+import HeroSection from "./components/Hero-section/Hero.jsx"
+import HowWorks from "./components/How-it-works-section/How-it-works.jsx"
+import TrendingProjects from "./components/Trending Projects/Trending.jsx"
 
 import styled from "styled-components"
 
 const App = () => {
   return (
     <div>
-      <Title>Hello World!</Title>
-      <Wrapper>
-        <Left></Left>
-        <Right></Right>
-      </Wrapper>
 
       <Header />
       <HeroSection />
 
       <TrendingProjects />
       <HowWorks />
-      <Footer />
     </div>
   )
 }
