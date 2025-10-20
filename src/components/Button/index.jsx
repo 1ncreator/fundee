@@ -1,5 +1,6 @@
 import React from "react"
 import './button.css'
+import styled from "styled-components"
 
 const Button = ({ btntext, onClick, variant }) => (
   <button
