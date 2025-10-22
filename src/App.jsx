@@ -3,6 +3,7 @@ import HeroSection from "./components/Hero-section/Hero.jsx"
 import HowWorks from "./components/How-it-works-section/How-it-works.jsx"
 import TrendingProjects from "./components/Trending Projects/Trending.jsx"
 
+
 import styled from "styled-components"
 
 const App = () => {
@@ -11,7 +12,6 @@ const App = () => {
 
       <Header />
       <HeroSection />
-
       <TrendingProjects />
       <HowWorks />
     </div>
