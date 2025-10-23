@@ -1,7 +1,7 @@
 import Header from "./components/Header/Header.jsx"
 import HeroSection from "./components/Hero-section/Hero.jsx"
-import HowWorks from "./components/How-it-works-section/How-it-works.jsx"
 import TrendingProjects from "./components/Trending Projects/Trending.jsx"
+import HIW from "./components/How-it-works-section/HIW.jsx"
 
 
 import styled from "styled-components"
@@ -13,7 +13,7 @@ const App = () => {
       <Header />
       <HeroSection />
       <TrendingProjects />
-      <HowWorks />
+      <HIW />
     </div>
   )
 }

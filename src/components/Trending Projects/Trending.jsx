@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 import React from "react";
-import TestSlider from '../test.jsx';
+import TestSlider from './test.jsx';
 import Button from '../Button';
 
 export default function TrendingProjects() {
