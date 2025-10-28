@@ -1,5 +1,5 @@
 import HowItWorks from "./How-it-works.jsx"
-import styled from "styled-components"
+import { styled } from "styled-components"
 
 export default function HIW() {
     return(

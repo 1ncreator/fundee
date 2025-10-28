@@ -1,17 +1,17 @@
-import styled from "styled-components"
+import { styled } from "styled-components"
 import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 
-const Projects_cards_data = [
+const Projects_cards_data: { id: number; image: string; title: string; authorlogo: string; author: string; balance: number; target: number; }[] = [
     {
         id: 1,
         image: "../images/carousel-img-1.png",
         title: "Name of the project",
         authorlogo: "../images/slider-author-1.png",
         author: "Jean Smith",
-        balance: "253",
-        target: "700",
+        balance: 253,
+        target: 700,
     },
     {
         id: 2,
@@ -19,8 +19,8 @@ const Projects_cards_data = [
         title: "Name of the project could be in two lines but not three ...",
         authorlogo: "../images/slider-author-2.png",
         author: "Jhon Smith",
-        balance: "581",
-        target: "700",
+        balance: 581,
+        target: 700,
     },
     {
         id: 3,
@@ -28,8 +28,8 @@ const Projects_cards_data = [
         title: "Name of the project could be in two lines but not three ...",
         authorlogo: "../images/slider-author-2.png",
         author: "Jhon Smith",
-        balance: "253",
-        target: "700",
+        balance: 630,
+        target: 700,
     },
     {
         id: 4,
@@ -37,8 +37,8 @@ const Projects_cards_data = [
         title: "Name of the project",
         authorlogo: "../images/slider-author-1.png",
         author: "Jean Smith",
-        balance: "253",
-        target: "700",
+        balance: 253,
+        target: 700,
     },
     {
         id: 5,
@@ -46,8 +46,8 @@ const Projects_cards_data = [
         title: "Name of the project could be in two lines but not three ...",
         authorlogo: "../images/slider-author-2.png",
         author: "Jhon Smith",
-        balance: "563",
-        target: "700",
+        balance: 563,
+        target: 700,
     },
     {
         id: 6,
@@ -55,8 +55,8 @@ const Projects_cards_data = [
         title: "Name of the project could be in two lines but not three ...",
         authorlogo: "../images/slider-author-2.png",
         author: "Jhon Smith",
-        balance: "253",
-        target: "700",
+        balance: 253,
+        target: 700,
     }
     
 ]
@@ -78,7 +78,7 @@ export default function TestSlider() {
             <EmblaViewport ref={emblaRef}>
                 <EmblaContainer>
                     {Projects_cards_data.map((card) => {
-                        const percent = Math.round((card.balance / card.target) * 100)
+                        const percent = Math.round((Number(card.balance) / Number(card.target)) * 100)
                         return (
                             <EmblaSlide key={card.id}>
                                 <div>

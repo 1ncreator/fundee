@@ -1,6 +1,5 @@
-
-import Button from '../Button'
-import styled from 'styled-components'
+import Button from '../Button/index.tsx'
+import { styled } from 'styled-components'
 
 
 export default function Header() {
@@ -17,8 +16,8 @@ export default function Header() {
                 </HeaderMenu>
             </HeaderLeft>
             <LoginBtns>
-                <Button btntext={'Log in'} variant='white-button' />
-                <Button btntext={'Sign up'} variant='purple-button' />
+                <Button onClick={() => {}} btntext={'Log in'} variant='white-button' />
+                <Button onClick={() => {}} btntext={'Sign up'} variant='purple-button' />
             </LoginBtns>
         </HeaderWrapper>
     )

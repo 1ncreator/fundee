@@ -1,6 +1,5 @@
-
-import Button from '../Button'
-import styled from 'styled-components'
+import Button from '../Button/index.tsx'
+import { styled } from 'styled-components'
 
 export default function Footer(){
 
@@ -10,7 +9,7 @@ export default function Footer(){
                 <FooterTitle>Don’t miss the latest updates</FooterTitle>
                 <FooterForm>
                     <Input type="email" placeholder='Your email' />
-                    <Button btntext = "Subscribe" variant='purple-button'></Button>
+                    <Button onClick={() => {}} btntext = "Subscribe" variant='purple-button'></Button>
                 </FooterForm>
             </FooterMain>
             <BorderFooter></BorderFooter>

@@ -1,15 +1,14 @@
-
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import React from "react";
 import TestSlider from './test.jsx';
-import Button from '../Button';
+import Button from '../Button/index.tsx';
 
 export default function TrendingProjects() {
     return(
         <TrendingWrapper>
             <Title>Trending projects</Title>
                 <TestSlider />
-            <Button btntext={'Explore projects'} variant='white-button' />
+            <Button onClick={() => {}} btntext={'Explore projects'} variant='white-button' />
         </TrendingWrapper>  
     )
 }

@@ -1,9 +1,12 @@
 
-import styled from "styled-components"
+import { styled } from "styled-components"
 import { useState } from "react"
-import Button from "../Button"
+import Button from "../Button/index.tsx"
 
-const flows = {
+const flows: { 
+    creator: { id: number; image: string; title: string; description: string; timeline?: string; }[]; 
+    fan: { id: number; image: string; title: string; description: string; timeline?: string; }[];
+} = {
     creator: [
         {
             id: 1,
@@ -68,7 +71,7 @@ const flows = {
 export default function HowItWorks() {
 
     const [activeFlow, setActiveFlow] = useState('creator');
-    const steps = flows[activeFlow];
+    const steps = flows[activeFlow as keyof typeof flows];
 
     return( 
         <ZaebalWrapper>
@@ -91,7 +94,7 @@ export default function HowItWorks() {
                 </Step>
             ))}
         </HowItWorksWrapper>
-        <Button btntext={'Call to action'} variant="purple-button" />
+        <Button onClick={() => {}} btntext={'Call to action'} variant="purple-button" />
         </ZaebalWrapper>
     )
 }
@@ -115,7 +118,7 @@ const Timeline = styled.img`
     left: 50%;
     transform: translateX(-50%);
 `
-const Step = styled.div`
+const Step = styled.div<{ $reverse: boolean }>`
     display: flex;
     position: relative;
     align-items: center;
@@ -153,7 +156,7 @@ const Btns = styled.div`
     border-radius: 20px;
 `
 
-const TabButton = styled.button`
+const TabButton = styled.button<{ $active: boolean }>`
     width: 116px;
     height: 36px;
     border-radius: 20px;
@@ -162,6 +165,7 @@ const TabButton = styled.button`
     font-weight: 600;
     color: ${({ $active }) => ($active ? '#FFFFFF' : '#212130')};
     background-color: ${({ $active }) => ($active ? '#6B68F3' : '#FFFFFF')};
+    transition: 1s ease;
 `
 // export default function HowWorks() {
 

@@ -4,7 +4,7 @@ import TrendingProjects from "./components/Trending Projects/Trending.jsx"
 import HIW from "./components/How-it-works-section/HIW.jsx"
 
 
-import styled from "styled-components"
+import { styled } from "styled-components"
 
 const App = () => {
   return (

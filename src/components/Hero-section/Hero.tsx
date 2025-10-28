@@ -1,5 +1,5 @@
-import Button from '../Button'
-import styled from 'styled-components'
+import Button from '../Button/index.tsx'
+import { styled } from 'styled-components'
 
 export default function HeroSection(){
     return(
@@ -7,7 +7,7 @@ export default function HeroSection(){
             <HeroLeft>
                 <HeroTitle>Fund the content that you want to see — from the people you want to see it from.</HeroTitle>
                 <HeroPodtitle>Fundee aligns what creators want to make with what their fans want to see. </HeroPodtitle>
-                    <Button btntext={"Call to action"} variant="purple-button" />
+                    <Button onClick={() => {}} btntext={"Call to action"} variant="purple-button" />
             </HeroLeft>
             <HeroRight>
                 <HeroImg src='../images/hero-img.png' alt='Hero Image'></HeroImg>
